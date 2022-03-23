@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
 body{
     height: 100vh;
     width: 100%;
@@ -7,8 +9,9 @@ body{
     display:flex;
     justify-content: center;
     position: relative;
-    /* background-color:black;
-    color:white; */
+    background-color:#121212;
+    color:hsla(0, 0%, 100%, 0.87);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .background{
@@ -19,6 +22,7 @@ body{
     background-size: cover;
     opacity: .3;
     position: absolute;
+    z-index:-2;
 }
 
 .nav__list {
@@ -31,12 +35,8 @@ body{
     left:0;
     width: 100%;
     z-index:1;
-    border: solid;
-    border-width: 1px 0;
-    border-color:grey;
-    border-top:none;
-    border-left:none;
-    border-right:none;
+    background-color: hsla(0, 0%, 100%, 0.05);
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
   }
 
 .nav__list__item {
@@ -53,24 +53,33 @@ body{
     align-items: center;
     text-align: center;
     height:3rem;
-    color: cornflowerblue;
+    color:hsla(0, 0%, 100%, 0.75);
     padding: .8rem 2.5rem;
     text-decoration: none;
     font-size:1.3rem;
 }
 
-.nav__list__item:nth-child(2) .nav__link{
-    color:white;
-    background-color: dodgerblue;
-}
-
 .nav__list__item:first-child .nav__link{
     font-size:1.7rem;
+    background-image: linear-gradient(to bottom right, #73A4FC, #4677CF, #5586DE, #6495ED);
+    font-weight: 500;
+    color:white;
 }
 
-.nav__list__item:first-child .nav__link:hover{
-    background-color: dodgerblue;
-    color:white;
+.dropdown, .dropbtn{
+    display:inline-block;
+}
+
+.dropdown__content{
+    display:none;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+    position:fixed;
+    background-color: hsla(0, 0%, 100%, 0.05);
+}   
+
+.dropdown:hover .dropdown__content{
+    display:block;
+    z-index:2;
 }
 
 .main__div{
@@ -81,11 +90,25 @@ body{
     align-items: center;
 }
 
+.bgsquare{
+    background-color: hsla(0, 0%, 100%, 0.05);
+    height:30rem;
+    width:50rem;
+    position:absolute;
+    z-index:-1;
+    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.2);
+}
+
 .main__title{
     height:12rem;
     width:70%;
-    font-size:2rem;
+    font-size:1.8rem;
     text-align: center;
+}
+
+.main__description{
+    text-align: center;
+    width:50rem;
 }
 
 .getstarted{
@@ -96,12 +119,14 @@ body{
 }
 
 .getstarted__title{
-    font-size:0.6rem;
+    font-size:0.4rem;
 }
 
 .getstarted__emailform{
     display:flex;
     flex-direction: row;
+    margin-top:1rem;
+    margin-bottom:3.5rem;
 }
 
 .getstarted__email {
@@ -120,8 +145,9 @@ body{
   
 .getstarted__enteremail {
     position: relative;
-    background: white;
+    background: hsla(0, 0%, 100%, 0.05);
     border-radius: 4px;
+    border:none;
     font-size: 1rem;
     line-height: 3rem;
     padding: 1rem 10rem 0;
@@ -136,8 +162,8 @@ body{
     position:relative;
     text-decoration: none;
     padding: 1rem;
-    color: #fff;
-    background-color:dodgerblue ;
+    color:white;
+    background-image: linear-gradient(to bottom right, #73A4FC, #4677CF, #5586DE, #6495ED);
     font-size: 1.5rem;
     border: none;
     border-radius: 4px;
