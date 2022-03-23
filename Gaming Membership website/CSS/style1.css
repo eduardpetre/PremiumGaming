@@ -2,6 +2,7 @@ body{
     height: 100vh;
     width: 100%;
     margin:0;
+    padding:0;
     border:none;
     display:flex;
     justify-content: center;
@@ -18,6 +19,58 @@ body{
     background-size: cover;
     opacity: .3;
     position: absolute;
+}
+
+.nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index:1;
+    border: solid;
+    border-width: 1px 0;
+    border-color:grey;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+  }
+
+.nav__list__item {
+    float: left;
+}
+
+.nav__list__item:nth-child(n+2){
+    float:right;
+}
+
+.nav__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height:3rem;
+    color: cornflowerblue;
+    padding: .8rem 2.5rem;
+    text-decoration: none;
+    font-size:1.3rem;
+}
+
+.nav__list__item:nth-child(2) .nav__link{
+    color:white;
+    background-color: dodgerblue;
+}
+
+.nav__list__item:first-child .nav__link{
+    font-size:1.7rem;
+}
+
+.nav__list__item:first-child .nav__link:hover{
+    background-color: dodgerblue;
+    color:white;
 }
 
 .main__div{

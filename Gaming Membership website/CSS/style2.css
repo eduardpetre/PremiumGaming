@@ -20,6 +20,45 @@ body{
     z-index:-1;
 }
 
+.nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index:1;
+    border: solid;
+    border-width: 1px 0;
+    border-color:grey;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+  }
+
+.nav__list__item {
+    float: left;
+}
+
+.nav__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height:3rem;
+    color: cornflowerblue;
+    padding: .8rem 2.5rem;
+    text-decoration: none;
+    font-size:1.7rem;
+}
+  
+.nav__link:hover{
+    background-color: dodgerblue;
+    color:white;
+}
+
 .main__div{
     width:30rem;
 }
