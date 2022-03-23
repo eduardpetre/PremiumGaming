@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
 
 body{
+    display:flex;
+    flex-direction: column;
+    position:absolute;
     height: 100vh;
     width: 100%;
     margin:0;
     padding:0;
     border:none;
-    display:flex;
-    justify-content: center;
-    position: relative;
     background-color:#121212;
     color:hsla(0, 0%, 100%, 0.87);
     font-family: 'Ubuntu', sans-serif;
 }
 
   .nav__list {
-    position: fixed;
+    position: absolute;
     margin: 0;
     padding: 0;
     top: 0;
@@ -56,9 +56,36 @@ body{
 }
 
 .main__div{
-    position:relative;
     display:flex;
     flex-direction: column;
+    margin-top: 4.6rem;
+}
+
+.cover{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    width: 100%;
+    height:35vh;
+    background-image: url(../img/pg4img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.subscription{
+    margin-left:3rem;
+}
+
+.sub__title{
+    margin-top:0;
+    margin-bottom:2rem;
+}
+
+.sub__link{
+    text-decoration: none;
+    padding:0.7rem;
+    border-radius: 4px;
+    color:white;
+    background-image: linear-gradient(to bottom right, #73A4FC, #4677CF, #5586DE, #6495ED);
 }
