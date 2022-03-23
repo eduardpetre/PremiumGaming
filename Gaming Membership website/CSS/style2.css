@@ -1,0 +1,88 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /* background-color: black;
+    color:white; */
+    height:100vh;
+    width:100%;
+    margin:0;
+}
+
+.background{
+    width:100%;
+    height:100%;
+    background-image: url(../img/bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .3;
+    position: absolute;
+    z-index:-1;
+}
+
+.main__div{
+    width:30rem;
+}
+
+.step{
+    font-size:1.1rem;
+}
+
+.password__title{
+    font-size:2.7rem;
+    margin-bottom:1.5rem;
+    margin-top:1.2rem;
+}
+
+.password__subtitle{
+    font-size:1.6rem;
+    margin-bottom:1.5rem;
+}
+
+.password__passform{
+    display:flex;
+    flex-direction: column;
+}
+
+.password__add{
+    position: relative;
+    display: flex;
+  }
+  
+.password__addpass__label {
+    position: absolute;
+    color: gray;
+    top:1.5rem;
+    left:0.5rem;
+    font-size: 1rem;
+    transition: all 300ms ease-in;
+  }
+  
+.password__addpass {
+    position: relative;
+    background: white;
+    border-radius: 4px;
+    border-color:black;
+    font-size: 1rem;
+    line-height: 3rem;
+    padding: 1rem 1rem 0;
+    width:100%;
+  }
+  
+.password__addpass:focus + .password__addpass__label {
+    top: 0.5rem;
+    font-size: 0.7rem;
+  }
+  
+.password__button{
+    position:relative;
+    text-decoration: none;
+    padding: 1rem;
+    margin-top:2rem;
+    color: #fff;
+    background-color:dodgerblue ;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
