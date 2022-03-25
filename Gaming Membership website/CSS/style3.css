@@ -93,6 +93,10 @@ body{
     border-color: grey;
 }
 
+.rows th{
+    padding: 1rem;
+}
+
 .rows td{
     padding:1rem;
 }

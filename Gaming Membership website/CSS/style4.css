@@ -70,7 +70,8 @@ body{
     background-image: url(../img/pg4img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    position: relative;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
 }
 
 .subscription{
@@ -88,4 +89,131 @@ body{
     border-radius: 4px;
     color:white;
     background-image: linear-gradient(to bottom right, #73A4FC, #4677CF, #5586DE, #6495ED);
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height:55vh;
+}
+
+.menu{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: start;
+    width:24.5rem;
+    height:100%;
+    background-color: hsla(0, 0%, 100%, 0.05);
+    box-shadow: 0px 20px 25px 0px rgba(0,0,0,0.2);
+}
+
+.menu__link{
+    text-decoration: none;
+    color:hsla(0, 0%, 100%, 0.3);
+    font-size:1rem;
+    padding:2.5rem;
+}
+
+.menu__link:first-child{
+    color:hsla(0, 0%, 100%, 0.5);
+}
+
+.menu__link:hover{
+    color:hsla(0, 0%, 100%, 0.5);
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 100%;
+    width:100%;
+}
+
+.gallery__container1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__container2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__container3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__container{
+    height:60%;
+    width:75%;
+    background-color: hsla(0, 0%, 100%, 0.05);
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+    display:flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.gallery__game{
+    width:100%;
+    height: 77.5%;
+    margin:0;
+    padding:0;
+    border:none;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.gallery__img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 77.5%;
+    width: 100%;
+    position: absolute;
+    top:0;
+}
+
+.gallery__name{
+    width: 100%;
+    height: 77.5%;
+    display:none;
+}
+
+.gallery__link{
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    width: 100%;
+    height: 22.5%;
+    background-image: linear-gradient(to bottom right, #73A4FC, #4677CF, #5586DE, #6495ED);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__link:hover ~ .gallery__img {
+    opacity:0.1;
+}
+
+
+.gallery__link:hover ~ .gallery__name{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:2;
 }
