@@ -1,1 +1,1 @@
-# GamingMembership
+https://eduardpetre.github.io/PremiumGaming/index.html
