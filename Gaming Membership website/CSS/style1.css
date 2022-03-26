@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 body{
     height: 100vh;
@@ -53,6 +53,11 @@ body{
     background-image: linear-gradient(to bottom right, #73A4FC, #4677CF, #5586DE, #6495ED);
     font-weight: 500;
     color:white;
+}
+
+.nav__link span{
+    font-weight: 300;
+    margin-left: .5rem;
 }
 
 .dropdown, .dropbtn{

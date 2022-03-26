@@ -1,13 +1,1 @@
 validare
-
-
-span
-ol
-
-
-checkbox
-
-2animatii
-2tranzitii
-
-id

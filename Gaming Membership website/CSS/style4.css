@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 body{
     display:flex;
@@ -47,6 +47,11 @@ body{
     color:hsla(0, 0%, 100%, 0.75);
     font-size:1.3rem;    
 }
+
+.nav__link span{
+    font-weight: 300;
+    margin-left: .5rem;
+}
   
 .nav__list__item:first-child .nav__link{
     font-size:1.7rem;
@@ -76,6 +81,14 @@ body{
 
 .subscription{
     margin-left:3rem;
+    position: relative;
+    animation-name: subscription-animation;
+    animation-duration: 3s;
+}
+
+@keyframes subscription-animation{
+    from{margin-left:30rem;}
+    to {margin-left:3rem;}
 }
 
 .sub__title{
@@ -164,7 +177,18 @@ body{
     display:flex;
     flex-direction: column-reverse;
     position: relative;
+    border:5px solid;
+    border-color: #121212;
+    animation-name:border;
+    animation-duration: 1s;    
 }
+
+@keyframes border {
+    0%   {border-top:5px solid;}
+    25%  {border-right:5px solid;}
+    50%  {border-bottom:5px solid;}
+    75%  {border-left:5px solid;}
+  }
 
 .gallery__game{
     width:100%;
@@ -207,6 +231,7 @@ body{
 
 .gallery__link:hover ~ .gallery__img {
     opacity:0.1;
+    transition: ease-in 0.5s;
 }
 
 

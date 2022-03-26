@@ -13,7 +13,7 @@
 <body>
   <nav class="nav__bar">
     <ul class="nav__list">
-      <li class="nav__list__item"><a class="nav__link" href="../index.html">Premium Gaming</a></li>
+      <li class="nav__list__item"><a class="nav__link" href="../index.html">Premium <span> Gaming </span></a></li>
     </ul>
   </nav>
   <main class="main__div">
@@ -31,6 +31,12 @@
       <form class="password__passform" action="page3.html"> 
         <div class="password__add">
           <input class="password__addpass" type="password" /><label class="password__addpass__label">Add a password</label>
+        </div>
+        <div class="terms">
+          <input type="checkbox" id="termsconditions" name="terms" value="T&C">
+          <label id="tc1" for="terms">By checking this box, you are agreeing to our terms of service.</label><br>
+          <input type="checkbox" id="email" name="emails" value="Emails">
+          <label id="tc2" for="emails">Send me Premium Gaming news, events and exclusive offers.</label>
         </div>
         <button class="password__button" type="submit">Next</button>
       </form>
