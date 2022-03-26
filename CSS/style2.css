@@ -2,7 +2,7 @@
 
 body{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     margin:0;
     padding:0;
     border:none;
@@ -14,7 +14,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
-  .nav__list {
+.nav__list {
     position: fixed;
     margin: 0;
     padding: 0;
@@ -26,7 +26,7 @@ body{
     list-style-type: none;
     background-color: hsla(0, 0%, 100%, 0.05);
     box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
-  }
+}
 
 .nav__list__item {
     float: left;
@@ -41,7 +41,7 @@ body{
     height:3rem;
     padding: .8rem 2.5rem;
     color:hsla(0, 0%, 100%, 0.75);
-    font-size:1.3rem;    
+    font-size:1.3em;    
 }
 
 .nav__link span{
@@ -50,7 +50,7 @@ body{
 }
   
 .nav__list__item:first-child .nav__link{
-    font-size:1.7rem;
+    font-size:1.7em;
     background-image: linear-gradient(to bottom right, #73A4FC, #4677CF, #5586DE, #6495ED);
     font-weight: 500;
     color:white;
@@ -73,17 +73,17 @@ body{
 }
 
 .step{
-    font-size:1.1rem;
+    font-size:1.1em;
 }
 
 .password__title{
-    font-size:2.7rem;
+    font-size:2.7em;
     margin-bottom:1.5rem;
     margin-top:1.2rem;
 }
 
 .password__subtitle{
-    font-size:1.6rem;
+    font-size:1.6em;
     margin-bottom:1.5rem;
 }
 
@@ -102,7 +102,7 @@ body{
     color: gray;
     top:1.5rem;
     left:0.5rem;
-    font-size: 1rem;
+    font-size: 1em;
     transition: all 300ms ease-in;
   }
   
@@ -110,15 +110,16 @@ body{
     position: relative;
     background: hsla(0, 0%, 100%, 0.05);
     border:none;
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 3rem;
     padding: 1rem 1rem 0;
     width:100%;
+    color:hsla(0, 0%, 100%, 0.87);
   }
   
 .password__addpass:focus + .password__addpass__label {
   top: 0.5rem;
-  font-size: 0.7rem;
+  font-size: 0.7em;
 }
   
 .password__button{
@@ -128,17 +129,50 @@ body{
   margin-top:1rem;
   color: #fff;
   background-image: linear-gradient(to bottom right, #73A4FC, #4677CF, #5586DE, #6495ED);
-  font-size: 1.5rem;
+  font-size: 1.5em;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .terms{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.terms:nth-last-of-type(2){
   margin-top:1rem;
 }
 
 #tc1, #tc2{
-  font-size: 0.9rem;
+  font-size: 0.9em;
   color:hsla(0, 0%, 100%, 0.6);
+}
+
+@media screen and (max-width: 600px){
+  body{
+      font-size: 8px;
+  }
+  .nav__link{
+      padding: .2rem .7rem;
+  }
+
+  .nav__link span{
+      margin-left: .2rem;
+  }
+  
+  .bgsquare{
+      height:50%;
+      width:90%;
+  }
+
+  .password__addpass{
+      line-height: 1.5rem;
+      padding: 1rem 4rem 0;
+  }
+
+  .password__addpass__label {
+    top:1rem;
+  }
 }

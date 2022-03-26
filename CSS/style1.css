@@ -15,18 +15,18 @@ body{
 }
 
 .nav__list {
-    list-style-type: none;
+    position: fixed;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    position: absolute;
     top: 0;
     left:0;
-    width: 100%;
     z-index:1;
+    overflow: hidden;
+    width: 100%;
+    list-style-type: none;
     background-color: hsla(0, 0%, 100%, 0.05);
     box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
-  }
+}
 
 .nav__list__item {
     float: left;
@@ -41,11 +41,11 @@ body{
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    height:3rem;
-    color:hsla(0, 0%, 100%, 0.75);
-    padding: .8rem 2.5rem;
     text-decoration: none;
-    font-size:1.3em;
+    height:3rem;
+    padding: .8rem 2.5rem;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size:1.3em;    
 }
 
 .nav__list__item:first-child .nav__link{
@@ -77,7 +77,6 @@ body{
 }
 
 .main__div{
-    position:relative;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -126,7 +125,7 @@ body{
 .getstarted__enteremail__label {
     position: absolute;
     color: gray;
-    top:1.25rem;
+    top:1.5rem;
     left:0.5rem;
     font-size: 0.9em;
     transition: all 300ms ease-in;
@@ -140,6 +139,7 @@ body{
     font-size: 1em;
     line-height: 3rem;
     padding: 1rem 10rem 0;
+    color:hsla(0, 0%, 100%, 0.87);
   }
   
 .getstarted__enteremail:focus + .getstarted__enteremail__label {
@@ -173,7 +173,7 @@ body{
 
     .main__title{
         height: auto;
-        width:80%;
+        width:90%;
     }
 
     .bgsquare{
@@ -188,5 +188,9 @@ body{
     .getstarted__enteremail{
         line-height: 1.5rem;
         padding: 1rem 4rem 0;
+    }
+
+    .getstarted__enteremail__label {
+        top:1rem;
     }
 }
