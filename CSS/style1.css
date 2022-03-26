@@ -161,7 +161,7 @@ body{
 
 @media screen and (max-width: 600px){
     body{
-        font-size: 5px;
+        font-size: 8px;
     }
     .nav__link{
         padding: .2rem .7rem;
@@ -173,6 +173,12 @@ body{
 
     .main__title{
         height: auto;
+        width:80%;
+    }
+
+    .bgsquare{
+        height:50%;
+        width:90%;
     }
 
     .getstarted__button{
@@ -181,6 +187,6 @@ body{
 
     .getstarted__enteremail{
         line-height: 1.5rem;
-        padding: 1rem 1rem 0;
+        padding: 1rem 4rem 0;
     }
 }
