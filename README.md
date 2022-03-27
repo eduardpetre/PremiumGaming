@@ -1,1 +1,1 @@
-https://eduardpetre.github.io/PremiumGaming/index.html
+https://eduardpetre.github.io/PremiumGaming/
