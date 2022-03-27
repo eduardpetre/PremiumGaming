@@ -150,7 +150,34 @@ body{
   color:hsla(0, 0%, 100%, 0.6);
 }
 
-@media screen and (max-width: 600px){
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  body{
+      font-size: 12px;
+  }
+  .nav__link{
+      padding: .2rem .7rem;
+  }
+
+  .nav__link span{
+      margin-left: .2rem;
+  }
+  
+  .bgsquare{
+      height:50%;
+      width:90%;
+  }
+
+  .password__addpass{
+      line-height: 1.5rem;
+      padding: 1rem 4rem 0;
+  }
+
+  .password__addpass__label {
+    top:1rem;
+  }
+}
+
+@media screen and (max-width: 700px){
   body{
       font-size: 8px;
   }
