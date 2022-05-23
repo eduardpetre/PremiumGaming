@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+body{
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    min-height: 100vh;
+    width: 100vw;
+    margin:0;
+    padding:0;
+    border:none;
+    background-color:#121212;
+    color:hsla(0, 0%, 100%, 0.87);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+  .nav__list {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left:0;
+    z-index:1;
+    overflow: visible;
+    width: 100%;
+    list-style-type: none;
+    background-color: hsla(0, 0%, 100%, 0.05);
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+    height:4.6rem;
+  }
+
+.nav__list__item {
+    float: right;
+}
+
+.nav__list__item:first-child {
+    float: left;
+}
+
+.nav__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    height:3rem;
+    padding: .8rem 2.5rem;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size:1.3em;    
+}
+
+.nav__link span{
+    font-weight: 300;
+    margin-left: .5rem;
+}
+  
+.nav__list__item:first-child .nav__link{
+    font-size:1.7em;
+    background-image: linear-gradient(to bottom right, #73A4FC, #4677CF, #5586DE, #6495ED);
+    font-weight: 500;
+    color:white;
+}
+
+.searchbar{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+
+#searchGames {
+    background: hsla(0, 0%, 100%, 0.05);
+    border-radius: 4px;
+    border:none;
+    font-size: 1em;
+    line-height: 2rem;
+    padding: 1rem 5rem 0;
+    color:hsla(0, 0%, 100%, 0.87);
+    margin-left: 2rem;
+    margin-top:.8rem;
+    margin-right: 2rem;
+}
+  
+#searchGames::placeholder{
+    position: absolute;
+    color: gray;
+    top:1rem;
+    left:0.5rem;
+    font-size: 0.9em;
+    transition: all 300ms ease-in;
+}
+
+#searchGames:focus::placeholder{
+    top: 0.5rem;
+    font-size: 0.7em;
+  }
+
+#searchGamesList {
+    background-color: #121212;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: .8rem;
+}
+
+#searchGamesList li a {
+    background-color: transparent;    
+    padding: 1rem 2rem 1rem;
+    text-decoration: none;
+    font-size: 0.9em;
+    color: hsla(0, 0%, 100%, 0.87);
+    display:block;
+    background-color: hsla(0, 0%, 100%, 0.05);
+}
+
+.main__div{
+    display:flex;
+    flex-direction: column;
+    margin-top: 4.6rem;
+}
+
+.cover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height:35vh;
+    background-image: url(../img/pg4img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+}
+
+.subscription{
+    display: none;
+    margin-left:3rem;
+    position: relative;
+    animation-name: subscription-animation;
+    animation-duration: 3s;
+}
+
+@keyframes subscription-animation{
+    from{margin-left:30rem;}
+    to {margin-left:3rem;}
+}
+
+.sub__title{
+    margin-top:0;
+    margin-bottom:2rem;
+}
+
+.sub__link{
+    text-decoration: none;
+    padding:0.7rem;
+    border-radius: 4px;
+    color:white;
+    background-image: linear-gradient(to bottom right, #73A4FC, #4677CF, #5586DE, #6495ED);
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height:55vh;
+}
+
+.menu{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    width:24.5rem;
+    height:100%;
+    background-color: hsla(0, 0%, 100%, 0.05);
+    box-shadow: 0px 20px 25px 0px rgba(0,0,0,0.2);
+}
+
+.menu__link{
+    text-decoration: none;
+    color:hsla(0, 0%, 100%, 0.3);
+    font-size:1rem;
+    padding:2rem;
+}
+
+.menu__button{
+    position: absolute;
+    margin-left:2rem;
+    margin-top: 2rem;
+    font-size: 1.5em;
+    color:hsla(0, 0%, 100%, 0.5);
+    z-index:3;
+}
+
+.menu__link:first-child{
+    color:hsla(0, 0%, 100%, 0.5);
+    margin-top:3rem;
+}
+
+.menu__link:hover{
+    color:hsla(0, 0%, 100%, 0.1);
+}
+
+.shop{
+    width:100%;
+    height:100%;
+}
+
+.gallery{
+    margin-bottom: -1rem;
+    display: grid;
+    grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+    grid-template-rows: 100%;
+    width:100%;
+    height:50%;
+}
+
+.gallery__containerprev{
+    grid-column: 1 / 2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__container0{
+    grid-row: 1 / 2;
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__container1{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__container2{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__container3{
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__container4{
+    grid-row: 1 / 2;
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__containernext{
+    grid-column: 5 / 6;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__container{
+    height:60%;
+    width:75%;
+    background-color: hsla(0, 0%, 100%, 0.05);
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+    display:flex;
+    flex-direction: column-reverse;
+    position: relative;
+    border:5px solid;
+    border-color: #121212;
+    animation-name:border;
+    animation-duration: 1s;    
+}
+
+@keyframes border {
+    0%   {border-top:5px solid;}
+    25%  {border-right:5px solid;}
+    50%  {border-bottom:5px solid;}
+    75%  {border-left:5px solid;}
+  }
+
+.gallery__game{
+    width:100%;
+    height: 77.5%;
+    margin:0;
+    padding:0;
+    border:none;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.gallery__img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 77.5%;
+    width: 100%;
+    position: absolute;
+    top:0;
+}
+
+.gallery__name{
+    width: 100%;
+    height: 77.5%;
+    display:none;
+}
+
+.gallery__link{
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    width: 100%;
+    height: 22.5%;
+    background-image: linear-gradient(to bottom right, #73A4FC, #4677CF, #5586DE, #6495ED);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__link:hover ~ .gallery__img {
+    opacity:0.1;
+    transition: ease-in 0.5s;
+}
+
+
+.gallery__link:hover ~ .gallery__name{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:2;
+}
+
+.cart{
+    height:10%;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+}
+
+p{
+    margin:0;
+    margin-right:1rem;
+    margin-left:2rem;
+}
+
+#cartlist{
+    margin:0;
+}
+
+.date{
+    height:30%;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+}
+
+#datelist{
+    margin:0;
+}
+
+.cartbuttons{
+    height: 10%;
+    margin-left:2rem;
+}
+
+.cartbtn{
+    margin:0;
+    margin-right:1rem;
+    padding:0.5rem;
+    background-image:linear-gradient(to bottom right, #73A4FC, #4677CF, #5586DE, #6495ED);
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px){
+    body{
+        font-size: 8px;
+    }
+    .nav__link{
+        padding: .2rem .7rem;
+    }
+
+    .nav__link span{
+        margin-left: .2rem;
+    }
+
+    .main__div{
+        margin-top:3.4rem;
+    }
+
+    .cover{
+        height:17vh;
+    }
+
+    .content{
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .menu{
+        z-index:2;
+        display:none;
+        background-color: hsla(0, 0%, 0%, 0.9);
+        width:100%;
+        align-items: center;
+        position: sticky;
+    }
+
+    .menu__button{
+        margin-top: 1rem;
+        margin-left: 1.2rem;
+        font-size: 2.5em;
+        width: 100%;
+        z-index:3;
+    }
+
+    .menu__button:hover ~ .menu{
+        display: flex;
+    }
+
+
+    .gallery{
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 10% 30% 10% 30%;
+        height:80%;
+        width:70%;
+        position: absolute;
+        margin-top:4rem;
+    }
+
+    .gallery__container1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .gallery__container2{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .gallery__container3{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .gallery__container{
+        height:100%;
+    }
+
+    .gallery__link{
+        font-size:2em;
+    }
+}
+
+@media screen and (max-width: 700px){
+    body{
+        font-size: 8px;
+    }
+    .nav__link{
+        padding: .2rem .7rem;
+    }
+
+    .nav__link span{
+        margin-left: .2rem;
+    }
+
+    .main__div{
+        margin-top:3.4rem;
+    }
+
+    .cover{
+        display:none;
+    }
+
+    .content{
+        height: 100vh;
+    }
+
+    .menu{
+        z-index:2;
+        display:none;
+        background-color: hsla(0, 0%, 0%, 0.9);
+        width:100%;
+        align-items: center;
+        position: sticky;
+    }
+
+    .menu__button{
+        margin-top: 1rem;
+        margin-left: 1.2rem;
+        font-size: 2.5em;
+        width: 100%;
+        z-index:3;
+    }
+
+    .menu__button:hover ~ .menu{
+        display: flex;
+    }
+
+
+    .gallery{
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 10% 30% 10% 30%;
+        height:80%;
+        position: absolute;
+        margin-top:4rem;
+    }
+
+    .gallery__container1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .gallery__container2{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .gallery__container3{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .gallery__container{
+        height:100%;
+    }
+
+    .gallery__link{
+        font-size:2em;
+    }
+}

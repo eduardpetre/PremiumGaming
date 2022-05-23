@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang= "ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name = "author" content="Gaming memebership"/>
+  <link rel="stylesheet" type="text/css" href="../../static/CSS/style1.css">
+  <script src="https://kit.fontawesome.com/52ddf4b855.js" crossorigin="anonymous"></script>
+
+  <title>Premium Gaming</title>
+</head>
+
+<body>
+    <nav class="nav__bar">
+      <ul class="nav__list">
+        <li class="nav__list__item"><a class="nav__link" href="index.html">Premium <span> Gaming </span></a></li>
+        <li class="nav__list__item"><a class="nav__link" href="#">Sign Up </a></li>
+        <li class="nav__list__item">
+          <div class="dropdown">
+            <div class="dropbtn">
+              <a class="nav__link" href="#"><i class="fa-solid fa-globe"></i>English ﹀</a>
+            </div>
+              <div class="dropdown__content">
+              <a class="nav__link">Romana</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main class="main__div">
+        <div class="bgsquare"></div>
+        <div class="main__title">
+          <h1 class="main__title__h1">Unlimited games, promotions, and more.</h1>
+        </div>
+        <div class="main__description">
+          <h1>Play anywhere. Cancel anytime.</h1>
+        </div>
+        <div class="getstarted">
+          <div class="getstarted__title">
+            <h1>Ready to play? Enter your email to create or restart your membership.</h1>
+          </div>
+          <form class="getstarted__emailform" name="formular" action="../views/page2.ejs"> 
+            <div class="getstarted__email">
+              <input class="getstarted__enteremail" name="email" id="email" type="text" /><label class="getstarted__enteremail__label">Email address</label>
+            </div>
+            <button class="getstarted__button" type="submit" onclick="ValidateEmail(document.formular.email)">Get Started</button>
+          </form>
+        </div>
+            
+    </main>
+    <script src="../static/JS/script1.js"></script>
+</body>
+
+</html>

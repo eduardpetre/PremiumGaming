@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang= "ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name = "author" content="Gaming memebership"/>
+  <link rel="stylesheet" type="text/css" href="../../static/CSS/style3.css">
+  
+  <title>Premium Gaming</title>
+</head>
+
+<header>
+  <%- include('../partials/navbar'); %>
+</header>
+
+<body>
+  </nav>
+  <main class="main__div">
+    <div class="bgsquare"></div>
+    <div class="benefits">
+      <div class="step">
+        Step 2 of 3
+      </div>
+      <div class="benefits__title">
+        Choose the plan that's right for you.
+      </div>
+      <ol class="benefits__items">
+        <li class="benefits__items__elem">
+          Play all you want.
+        </li>
+        <li class="benefits__items__elem">
+          Recommendations just for you.
+        </li>
+        <li class="benefits__items__elem">
+          Change or cancel any time.
+        </li>
+      </ol>
+      <table class="prices">
+        <tr class="rows">
+          <th></th>
+          <th>Basic</th>
+          <th>Standard</th>
+          <th>Premium</th>
+        </tr>
+        <tr class="rows">
+          <td>Monthly price</td>
+          <td class="eur">9.99</td>
+          <td class="eur">14.99</td>
+          <td class="eur">19.99</td>
+        </tr>
+        <tr class="rows">
+          <td>Rewards</td>
+          <td>Free games</td>
+          <td>Free games, 5 free chests</td>
+          <td>Free games, 10 free chests, 100 gaming points</td>
+        </tr>
+        <tr class="rows">
+          <td>Resolution</td>
+          <td>480p</td>
+          <td>1080p</td>
+          <td>4K</td>
+        </tr>
+        <tr class="rows">
+          <td>Play on your PC, mobile phone or console</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td>✓</td>
+        </tr>
+      </table>
+    </div>
+    <div class="choose">
+      <p>Choose your plan:</p>
+      <form class="choose__form">
+        <div class="option">
+          <input type="radio" id="basic" name="fav_plan" value="Basic">
+          <label for="basic">Basic</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="standard" name="fav_plan" value="Standard">
+          <label for="standard">Standard</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="premium" name="fav_plan" value="Premium">
+          <label for="premium">Premium</label>
+        </div>
+      </form> 
+    </div>
+  
+    <form action="page4.ejs">
+      <button class="next" type="submit">Next</button>
+    </form>
+  </main>
+  
+</body>
+
+</html>

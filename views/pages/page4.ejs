@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang= "ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name = "author" content="Gaming memebership"/>
+  <link rel="stylesheet" type="text/css" href="../../static/CSS/style4.css">
+  <script src="https://kit.fontawesome.com/52ddf4b855.js" crossorigin="anonymous"></script>
+
+  <title>Premium Gaming</title>
+</head>
+
+<body id="bdy">
+  <nav class="nav__bar">
+    <ul class="nav__list" id="nvb">
+      <li class="nav__list__item"><a class="nav__link" href="index.ejs">Premium <span> Gaming </span></a></li>
+      <li class="nav__list__item"><a class="nav__link" href="index.ejs">Sign Out</a></li>
+      <li class="nav__list__item"><a class="nav__link" id="togglebutton" onClick="darkmodetoggle()" value="dark"><i class="fa-solid fa-moon"></i></a></li>
+      <div class="searchbar">
+        <input type="text" id="searchGames" onkeyup="search()" placeholder="Search for games.." title="Type in a game">
+        <ul id="searchGamesList" hidden>
+          <li><a href="#">Counter-Strike: Global Offensive</a></li>
+          <li><a href="#">League of Legends</a></li>
+          <li><a href="#">Rocket League</a></li>
+          <li><a href="#">TFT: Teamfight Tactics</a></li>
+          <li><a href="#">Valorant</a></li>
+        </ul>
+      </div>
+    </ul>
+  </nav>
+  <main class="main__div">
+    <div class="cover">
+      <div class="subscription" id="subs">
+        <h1 class="sub__title">Get Destiny 2 content with Premium</h1>
+        <a class="sub__link" href="page3.ejs">Activate Premium Gaming</a>
+      </div>
+    </div>
+    <div class="content">
+      <a class="menu__button"><i class="fa-solid fa-bars"></i></a>
+      <div class="menu" id="mnu">
+        <a class="menu__link" href="">PC/Laptop   <i class="fa-solid fa-desktop"></i></a>
+        <a class="menu__link" href="">Mobile phone    <i class="fa-solid fa-mobile-button"></i></a>
+        <a class="menu__link" href="">Gaming console    <i class="fa-solid fa-gamepad"></i></a>
+      </div>
+      <div class="shop" id="shp">
+        <div class="gallery">
+          <div class="gallery__containerprev" id="prev">〈 </div>
+          <div class="gallery__container0" id="game0">
+            <div class="gallery__container" id="cnt">
+              <a class="gallery__link" id="link0" onclick="addtocart0()">Claim</a>
+              <div class="gallery__img" style="background-image: url('../static/img/img0.jpg')"></div>
+              <div class="gallery__name">
+                <i class="fa-solid fa-car-burst"></i>
+                <p>Rocket League</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__container1" id="game1">
+            <div class="gallery__container" id="cnt">
+              <a class="gallery__link" id="link1" onclick="addtocart1()">Claim</a>
+              <div class="gallery__img" style="background-image: url('../static/img/img1.jpg')"></div>
+              <div class="gallery__name">
+                <i class="fa-solid fa-gun"></i>
+                <p>Counter-Strike: Global Offensive</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__container2" id="game2">
+            <div class="gallery__container" id="cnt">
+              <a class="gallery__link" id="link2" onclick="addtocart2()">Claim</a>
+              <div class="gallery__img" style="background-image: url('../static/img/img2.jpg')"></div>
+              <div class="gallery__name">
+                <i class="fa-solid fa-computer-mouse"></i>
+                <p>League of Legends</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__container3" id="game3">
+            <div class="gallery__container" id="cnt">
+              <a class="gallery__link" id="link3" onclick="addtocart3()">Claim</a>
+              <div class="gallery__img" style="background-image: url('../static/img/img3.jpg')"></div>
+              <div class="gallery__name">
+                <i class="fa-solid fa-headset"></i>
+                <p>Valorant</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__container4" id="game4">
+            <div class="gallery__container" id="cnt">
+              <a class="gallery__link" id="link4" onclick="addtocart4()">Claim</a>
+              <div class="gallery__img" style="background-image: url('../static/img/img4.jpg')"></div>
+              <div class="gallery__name">
+                <i class="fa-solid fa-chess-board"></i>
+                <p>TFT: Teamfight Tactics</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__containernext" id="next"> 〉</div>
+        </div>
+        <div class="cart">
+          <p>Cart: </p>
+          <p id="cartlist"></p>
+        </div>
+        <div class="date" id="date">
+          <!-- <p id="datetxt">Date: </p> -->
+          <!-- <p id="datelist"></p> -->
+        </div>
+        <div class="cartbuttons">
+          <a class="cartbtn" onclick="popfromcart()">Delete last</a>
+          <a class="cartbtn" onclick="sortcart()">Sort</a>
+          <a class="cartbtn" onclick="showDates()">Show dates</a>
+          
+
+        </div>
+      
+      
+      </div>
+    </div>
+    
+  </main>
+  <script src="../static/JS/script4.js"></script>
+</body>
+
+</html>
