@@ -358,7 +358,7 @@ p{
     margin:0;
 }
 
-.date{
+.output{
     height:30%;
     width:100%;
     display:flex;
@@ -369,17 +369,34 @@ p{
     margin:0;
 }
 
+#detailsList{
+    margin:0;
+}
+
 .cartbuttons{
     height: 10%;
     margin-left:2rem;
 }
 
 .cartbtn{
+    text-decoration: none;
+    color:inherit;
     margin:0;
     margin-right:1rem;
     padding:0.5rem;
     background-image:linear-gradient(to bottom right, #73A4FC, #4677CF, #5586DE, #6495ED);
 }
+
+.cartbtn:last-of-type{
+    float:right;
+    background-image:linear-gradient(to bottom right, #A52A2A, #961B1B, #870C0C, #B43939);
+    margin-right:7rem;
+}
+
+#gamesform{
+    display: none;
+}
+
 
 @media screen and (min-width: 700px) and (max-width: 1024px){
     body{

@@ -132,6 +132,7 @@ body{
 .choose__form{
     display:flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .option{

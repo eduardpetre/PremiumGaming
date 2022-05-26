@@ -70,25 +70,27 @@
     </div>
     <div class="choose">
       <p>Choose your plan:</p>
-      <form class="choose__form">
-        <div class="option">
-          <input type="radio" id="basic" name="fav_plan" value="Basic">
-          <label for="basic">Basic</label>
+      <form action="/views" method="POST">
+        <div class="choose__form">
+          <div class="option">
+            <input type="radio" id="basic" name="fav_plan" value="Basic">
+            <label for="basic">Basic</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="standard" name="fav_plan" value="Standard" checked>
+            <label for="standard">Standard</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="premium" name="fav_plan" value="Premium">
+            <label for="premium">Premium</label>
+          </div>
         </div>
-        <div class="option">
-          <input type="radio" id="standard" name="fav_plan" value="Standard">
-          <label for="standard">Standard</label>
-        </div>
-        <div class="option">
-          <input type="radio" id="premium" name="fav_plan" value="Premium">
-          <label for="premium">Premium</label>
-        </div>
-      </form> 
-    </div>
+        <button class="next" type="submit">Next</button>
+      </form>
   
-    <form action="page4.ejs">
+    <!-- <form action="page4.ejs">
       <button class="next" type="submit">Next</button>
-    </form>
+    </form> -->
   </main>
   
 </body>

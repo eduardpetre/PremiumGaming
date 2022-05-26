@@ -32,7 +32,7 @@
     <div class="cover">
       <div class="subscription" id="subs">
         <h1 class="sub__title">Get Destiny 2 content with Premium</h1>
-        <a class="sub__link" href="page3.ejs">Activate Premium Gaming</a>
+        <a class="sub__link" onclick="update()">Activate Premium Gaming</a>
       </div>
     </div>
     <div class="content">
@@ -101,19 +101,27 @@
           <p>Cart: </p>
           <p id="cartlist"></p>
         </div>
-        <div class="date" id="date">
+        <div class="output" id="output">
           <!-- <p id="datetxt">Date: </p> -->
           <!-- <p id="datelist"></p> -->
+          <!-- <p id="detailstxt">Details: </p> -->
+          <!-- <ol id="detailsList"></ol> -->
         </div>
         <div class="cartbuttons">
-          <a class="cartbtn" onclick="popfromcart()">Delete last</a>
+          <a class="cartbtn" onclick="showDetails()">Show details</a>
           <a class="cartbtn" onclick="sortcart()">Sort</a>
+          <a class="cartbtn" onclick="popfromcart()">Delete last</a>
+          <form id="gamesform" action="/views" method="POST">
+            <input type="checkbox" id="wtb0" name="wtb0" value="Rocket League">
+            <input type="checkbox" id="wtb1" name="wtb1" value="Counter-Strike: Global Offensive">
+            <input type="checkbox" id="wtb2" name="wtb2" value="League of Legends">
+            <input type="checkbox" id="wtb3" name="wtb3" value="Valorant">
+            <input type="checkbox" id="wtb4" name="wtb4" value="TFT: Teamfight Tactics">
+          </form>
+          <a class="cartbtn" onclick="submitfunction()">Buy</a>
           <a class="cartbtn" onclick="showDates()">Show dates</a>
-          
-
+          <a class="cartbtn" onclick="deleteAll()">Delete all</a>
         </div>
-      
-      
       </div>
     </div>
     
